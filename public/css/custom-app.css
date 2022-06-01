@@ -1,0 +1,27 @@
+:root {
+    --primary: #179ef1;
+    --soft-primary: #56b7f3cc;
+    --secondary: lime;
+    --light: #f2f3f8;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: var(--light);
+}
+
+.card {
+    -webkit-box-shadow: 0 0 13px 0 rgb(82 63 105 / 5%);
+    box-shadow: 0 0 13px 0 rgb(82 63 105 / 5%);
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-color: #ebedf2;
+}

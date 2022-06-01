@@ -1,0 +1,27 @@
+@extends('layouts.master')
+@section('title', 'Static Content')
+@section('content')
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-primary"><i class="fal fa-angle-double-right">&nbsp;</i>Static Content <a class="text-success" href="{{ url()->previous() }}"><i class="fal fa-angle-double-right">&nbsp;</i>Call Remarks</a> <i class="fal fa-angle-double-right">&nbsp;</i>Create</p>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-6 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Create Call Remarks</p>
+                </div>
+                <div class="card-body">
+                    @include('call_remarks._form')
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
